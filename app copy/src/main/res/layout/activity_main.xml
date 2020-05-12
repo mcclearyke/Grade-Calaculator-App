@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/course_and_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/course_and_section"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/iaEarnedView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/ia_earned_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/course_and_section" />
+
+    <EditText
+        android:id="@+id/iaEarned"
+        android:layout_width="93dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="104dp"
+        android:ems="10"
+        android:hint="@string/short_input"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/iaEarnedView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/iaPossibleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/ia_possible_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iaEarnedView" />
+
+    <EditText
+        android:id="@+id/iaPossible"
+        android:layout_width="85dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/short_input"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iaPossibleView"
+        app:layout_constraintTop_toBottomOf="@+id/iaEarned" />
+
+    <TextView
+        android:id="@+id/teamEarnedView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/team_earned_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iaPossibleView" />
+
+    <EditText
+        android:id="@+id/teamEarned"
+        android:layout_width="148dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="3dp"
+        android:ems="10"
+        android:hint="@string/long_input"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/teamEarnedView"
+        app:layout_constraintTop_toBottomOf="@+id/iaPossible" />
+
+    <TextView
+        android:id="@+id/teamPossibleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/team_possible_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teamEarnedView" />
+
+    <EditText
+        android:id="@+id/teamPossible"
+        android:layout_width="137dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="@string/long_input"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/teamPossibleView"
+        app:layout_constraintTop_toBottomOf="@+id/teamEarned" />
+
+    <TextView
+        android:id="@+id/midtermEarnedView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/midterm_earned_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teamPossibleView" />
+
+    <EditText
+        android:id="@+id/midtermEarned"
+        android:layout_width="134dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/long_input"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/midtermEarnedView"
+        app:layout_constraintTop_toBottomOf="@+id/teamPossible" />
+
+    <TextView
+        android:id="@+id/midtermPossibleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/midterm_possible_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/midtermEarnedView" />
+
+    <EditText
+        android:id="@+id/midtermPossible"
+        android:layout_width="130dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/long_input"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/midtermPossibleView"
+        app:layout_constraintTop_toBottomOf="@+id/midtermEarned" />
+
+    <TextView
+        android:id="@+id/finalEarnedView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/final_earned_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/midtermPossibleView" />
+
+    <EditText
+        android:id="@+id/finalEarned"
+        android:layout_width="163dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="1dp"
+        android:ems="10"
+        android:hint="@string/long_input"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/finalEarnedView"
+        app:layout_constraintTop_toBottomOf="@+id/midtermPossible" />
+
+    <TextView
+        android:id="@+id/finalPossibleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/final_possible_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finalEarnedView" />
+
+    <EditText
+        android:id="@+id/finalPossible"
+        android:layout_width="156dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="@string/long_input"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/finalPossibleView"
+        app:layout_constraintTop_toBottomOf="@+id/finalEarned" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="52dp"
+        android:onClick="handleClick"
+        android:text="@string/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finalPossibleView" />
+
+    <TextView
+        android:id="@+id/gradeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/grade_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/finalPossible" />
+
+    <TextView
+        android:id="@+id/displayGrade"
+        android:layout_width="95dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="58dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/gradeView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
